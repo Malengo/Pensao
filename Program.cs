@@ -6,13 +6,13 @@ Room[] room = new Room[10];
 Student[] student = new Student[studentQuantity];
 string name, email;
 
-for (int numberOfRoom = 0; numberOfRoom < 10; numberOfRoom++)
+for (int numberOfRoom = 0; numberOfRoom < room.Length; numberOfRoom++)
 {
     room[numberOfRoom] = new Room();
     room[numberOfRoom].rent = false;
 }
 
-for (int option = 0; option < studentQuantity; option++)
+for (int option = 0; option < student.Length; option++)
 {
     Console.Write("Digite  qual quarto gostaria de ficar: ");
     int choice = int.Parse(Console.ReadLine());
